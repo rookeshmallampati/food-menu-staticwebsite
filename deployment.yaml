@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: static-website-deployment
+  name: menu-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: static-website
+      app: menu-app
   template:
     metadata:
       labels:
-        app: static-website
+        app: menu-app
     spec:
       containers:
-      - name: static-website-container
-        image: ckr123/static-website-k8s:v1
+      - name: menu-app-container
+        image: rookesh975/menu_card:latest 
         ports:
         - containerPort: 80
