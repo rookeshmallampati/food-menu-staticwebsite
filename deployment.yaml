@@ -13,7 +13,7 @@ spec:
         app: menu-app
     spec:
       containers:
-      - name: menu-app-container
+      - name: menu-app
         image: rookesh975/menu_card:latest 
         ports:
         - containerPort: 80
